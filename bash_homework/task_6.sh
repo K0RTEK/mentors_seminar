@@ -14,7 +14,7 @@ fi
 
 cat input.txt
 
-# 2. Перенаправляет вывод команды wc -l (подсчет строк) в файл output.txt.
+# 2. Перенап  равляет вывод команды wc -l (подсчет строк) в файл output.txt.
 echo ""
 echo "Подсчёт строк в input.txt и запись результата в output.txt:"
 wc -l < input.txt > output.txt

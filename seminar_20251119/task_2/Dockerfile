@@ -1,4 +1,11 @@
-FROM ubuntu:latest
-LABEL authors="kirill"
+FROM python:3.12-slim
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /app
+
+COPY server.py .
+
+ENV PORT=8000
+
+EXPOSE 8000
+
+CMD ["python", "server.py"]
